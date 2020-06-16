@@ -1,4 +1,4 @@
-%% Корни
+%% ГЉГ®Г°Г­ГЁ
 %% 3.a
 x = linspace(-3, 3, 100);
 f = 'sin(exp(x))';
@@ -59,8 +59,14 @@ z = ginput(1);
 hold on
 plot(zr, fr, 'r*', z(1), z(2), 'g*')
 hold off
+%% 5
+clear;
+syms x
+fzero('cos(x) - exp(0.001 + x^2)',0)
+p = cos(x)-exp(1).^0.001+x^2 ==0;
+S = solve(p)
 %% 1.a
-%% Метод Ньютона
+%% ГЊГҐГІГ®Г¤ ГЌГјГѕГІГ®Г­Г 
 clear;
 a = -5; b = 5;
 m = 50; x = linspace(a, b, m);
@@ -89,7 +95,7 @@ for i=1:iter
 end
 hold off
 'End Iteration';
-%% Метод деления пополам
+%% ГЊГҐГІГ®Г¤ Г¤ГҐГ«ГҐГ­ГЁГї ГЇГ®ГЇГ®Г«Г Г¬
 clear;
 a = -5; b = 5;
 m = 50; x = linspace(a, b, m);
@@ -119,7 +125,7 @@ for i=1:iter
 end
 hold off
 %% 1.b
-%% Метод Ньютона
+%% ГЊГҐГІГ®Г¤ ГЌГјГѕГІГ®Г­Г 
 clear;
 a = 0; b = 14;
 m = 50; x = linspace(a, b, m);
@@ -148,7 +154,7 @@ for i=1:iter
 end
 hold off
 'End Iteration';
-%% Метод деления пополам
+%% ГЊГҐГІГ®Г¤ Г¤ГҐГ«ГҐГ­ГЁГї ГЇГ®ГЇГ®Г«Г Г¬
 clear;
 a = 0; b = 14;
 m = 50; x = linspace(a, b, m);
@@ -178,7 +184,7 @@ for i=1:iter
 end
 hold off
 %% 1.c
-%% Метод Ньютона
+%% ГЊГҐГІГ®Г¤ ГЌГјГѕГІГ®Г­Г 
 clear;
 a = 0; b = 2*pi;
 m = 50; x = linspace(a, b, m);
@@ -207,7 +213,7 @@ for i=1:iter
 end
 hold off
 'End Iteration';
-%% Метод деления пополам
+%% ГЊГҐГІГ®Г¤ Г¤ГҐГ«ГҐГ­ГЁГї ГЇГ®ГЇГ®Г«Г Г¬
 clear;
 a = 0; b = 2*pi;
 m = 50; x = linspace(a, b, m);
